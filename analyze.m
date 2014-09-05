@@ -2,7 +2,7 @@ for i = 1:3
     
     % Generate strings for file and image names:
     file_name = sprintf('inflammation-%02d.csv', i);
-    img_name = sprintf ('patient_data-%02d.svg', i);
+    img_name = sprintf ('patient_data-%02d.png', i);
 
     patient_data = csvread(file_name);
     ave_inflammation = mean(patient_data, 1);
